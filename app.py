@@ -24,9 +24,9 @@ def main():
     #     "How would you like to predict?",
     #     ("Online", "Batch"))
 
-    from PIL  import Image
-    image=Image.open('Capture.png')
-    st.sidebar.image(image,width=300)
+#     from PIL  import Image
+#     image=Image.open('Capture.png')
+#     st.sidebar.image(image,width=300)
 
     st.title("False Reject Prediction  App")
 
