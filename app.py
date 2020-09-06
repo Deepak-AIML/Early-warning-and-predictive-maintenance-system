@@ -6,7 +6,7 @@ import streamlit as st
 from catboost import CatBoostClassifier
 
 # Load the Catboost  model
-filename ='cat_optimal.pkl'
+filename ='cat_optimal2.pkl'
 classifier = pickle.load(open(filename, 'rb'))
 
 def predict_prob(partnumber,toplevelserialnumber,collid,chardesc,charvalue):
