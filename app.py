@@ -75,7 +75,7 @@ def main():
         result = predict_prob(partnumber, toplevelserialnumber, collid, chardesc, charvalue)
         print(result)
 
-        if result > 0.0 and result <= 0.3:
+        if result >= 0.0 and result <= 0.3:
             st.error("The Probability of False Reject  is {}, Please start downtime.".format(result))
         elif result > 0.3 and result <= 0.5:
             st.warning(
